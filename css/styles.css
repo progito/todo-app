@@ -1,0 +1,182 @@
+.wrapperCenter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 500px;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container .topPanel {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.container .topPanel div {
+  flex: 1
+}
+
+#searchInput {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #6c63ff;
+  border-radius: 5px
+}
+
+.addButton {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  border: none;
+  background: #6c63ff;
+  color: white;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+
+#themeToggle{
+  border-radius: 5px;
+  border: none;
+  background: #6c63ff;
+  color: white;
+  cursor: pointer;
+  width: 30px;
+}
+
+.taskItem {
+  padding: 14px 0;
+  border-bottom: 1px solid #cfcdf8;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.taskItem input[type='checkbox'] {
+  appearance: none; 
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 1px solid #6c63ff;
+  margin-right: 12px;
+  position: relative;
+}
+
+.taskItem input[type='checkbox']:checked {
+  background: #6c63ff;
+}
+
+.taskItem input[type='checkbox']:checked::after {
+  content: '✔';
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: -1px;
+  left: 2px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  width: 300px;
+}
+
+#modalTaskInput {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0 ;
+}
+
+/* CSS */
+.btn {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember",sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+}
+
+.btn:hover {
+  background-color: #f7fafa;
+}
+
+.btn:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  outline: 0;
+}
+
+.taskActions {
+  display: flex;
+  gap: 8px;
+}
+
+.btnSquare {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #6c63ff
+}
+
+.btnRemove {
+  background: #ff6363
+}
+
+.taskText {
+  flex: 1;
+  margin-left: 12px;
+}
+
+.taskText.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+#filterSelect {
+  border-radius: 5px;
+  border: 1px solid #6c63ff;
+  padding: 6px;
+}

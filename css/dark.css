@@ -1,0 +1,27 @@
+body.dark {
+  background: rgb(21, 21, 21);
+}
+
+body.dark .container {
+  background: rgb(56, 56, 56);
+  color: white
+}
+
+body.dark .modalContent {
+  background: rgb(56, 56, 56);
+  color: white
+}
+
+body.dark input {
+  background: #333;
+  color: white
+}
+
+body.dark select {
+  background: #333;
+  color: white
+}
+
+body.dark .taskItem {
+  border-color: #444;
+}
